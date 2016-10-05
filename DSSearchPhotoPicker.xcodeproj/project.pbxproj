@@ -7,77 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC594E481DA51ED300823047 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E471DA51ED300823047 /* main.m */; };
-		CC594E4B1DA51ED300823047 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E4A1DA51ED300823047 /* AppDelegate.m */; };
-		CC594E4E1DA51ED300823047 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E4D1DA51ED300823047 /* ViewController.m */; };
-		CC594E511DA51ED300823047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC594E4F1DA51ED300823047 /* Main.storyboard */; };
-		CC594E531DA51ED300823047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC594E521DA51ED300823047 /* Assets.xcassets */; };
-		CC594E561DA51ED300823047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC594E541DA51ED300823047 /* LaunchScreen.storyboard */; };
-		CC594E611DA51ED400823047 /* customPhotoPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E601DA51ED400823047 /* customPhotoPickerTests.m */; };
-		CC594E6C1DA51ED400823047 /* customPhotoPickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E6B1DA51ED400823047 /* customPhotoPickerUITests.m */; };
-		CC594E7C1DA5270E00823047 /* firstView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E7B1DA5270E00823047 /* firstView.m */; };
-		CC594E7F1DA5271D00823047 /* secondView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E7E1DA5271D00823047 /* secondView.m */; };
-		CC594E821DA5272D00823047 /* thirdView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E811DA5272D00823047 /* thirdView.m */; };
+		CC594E891DA53AC100823047 /* firstView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E841DA53AC100823047 /* firstView.m */; };
+		CC594E8A1DA53AC100823047 /* secondView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E861DA53AC100823047 /* secondView.m */; };
+		CC594E8B1DA53AC100823047 /* thirdView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E881DA53AC100823047 /* thirdView.m */; };
+		CC594E911DA53ADF00823047 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E8D1DA53ADF00823047 /* AppDelegate.m */; };
+		CC594E921DA53ADF00823047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC594E8E1DA53ADF00823047 /* Assets.xcassets */; };
+		CC594E961DA53AFC00823047 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E951DA53AFC00823047 /* main.m */; };
+		CC594E9F1DA53B9000823047 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC594E901DA53ADF00823047 /* Info.plist */; };
+		CC594EB61DA53C9600823047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC594EB21DA53C9600823047 /* LaunchScreen.storyboard */; };
+		CC594EB71DA53C9600823047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC594EB41DA53C9600823047 /* Main.storyboard */; };
+		CC594EBA1DA53CAE00823047 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594EB91DA53CAE00823047 /* ViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CC594E5D1DA51ED400823047 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CC594E3B1DA51ED300823047 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CC594E421DA51ED300823047;
-			remoteInfo = customPhotoPicker;
-		};
-		CC594E681DA51ED400823047 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CC594E3B1DA51ED300823047 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CC594E421DA51ED300823047;
-			remoteInfo = customPhotoPicker;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CC594E431DA51ED300823047 /* DSSearchPhotoPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSSearchPhotoPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC594E471DA51ED300823047 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CC594E491DA51ED300823047 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CC594E4A1DA51ED300823047 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CC594E4C1DA51ED300823047 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CC594E4D1DA51ED300823047 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CC594E501DA51ED300823047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CC594E521DA51ED300823047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CC594E551DA51ED300823047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CC594E571DA51ED300823047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC594E5C1DA51ED400823047 /* DSSearchPhotoPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSSearchPhotoPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC594E601DA51ED400823047 /* customPhotoPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = customPhotoPickerTests.m; sourceTree = "<group>"; };
-		CC594E621DA51ED400823047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC594E671DA51ED400823047 /* DSSearchPhotoPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSSearchPhotoPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC594E6B1DA51ED400823047 /* customPhotoPickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = customPhotoPickerUITests.m; sourceTree = "<group>"; };
-		CC594E6D1DA51ED400823047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC594E7A1DA5270E00823047 /* firstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = firstView.h; sourceTree = "<group>"; };
-		CC594E7B1DA5270E00823047 /* firstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = firstView.m; sourceTree = "<group>"; };
-		CC594E7D1DA5271D00823047 /* secondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondView.h; sourceTree = "<group>"; };
-		CC594E7E1DA5271D00823047 /* secondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondView.m; sourceTree = "<group>"; };
-		CC594E801DA5272D00823047 /* thirdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thirdView.h; sourceTree = "<group>"; };
-		CC594E811DA5272D00823047 /* thirdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = thirdView.m; sourceTree = "<group>"; };
+		CC594E831DA53AC100823047 /* firstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = firstView.h; path = DSSearchPhotoPicker/firstView.h; sourceTree = SOURCE_ROOT; };
+		CC594E841DA53AC100823047 /* firstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = firstView.m; path = DSSearchPhotoPicker/firstView.m; sourceTree = SOURCE_ROOT; };
+		CC594E851DA53AC100823047 /* secondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = secondView.h; path = DSSearchPhotoPicker/secondView.h; sourceTree = SOURCE_ROOT; };
+		CC594E861DA53AC100823047 /* secondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = secondView.m; path = DSSearchPhotoPicker/secondView.m; sourceTree = SOURCE_ROOT; };
+		CC594E871DA53AC100823047 /* thirdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = thirdView.h; path = DSSearchPhotoPicker/thirdView.h; sourceTree = SOURCE_ROOT; };
+		CC594E881DA53AC100823047 /* thirdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = thirdView.m; path = DSSearchPhotoPicker/thirdView.m; sourceTree = SOURCE_ROOT; };
+		CC594E8C1DA53ADF00823047 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = DSSearchPhotoPicker/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		CC594E8D1DA53ADF00823047 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = DSSearchPhotoPicker/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		CC594E8E1DA53ADF00823047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = DSSearchPhotoPicker/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		CC594E901DA53ADF00823047 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = DSSearchPhotoPicker/Info.plist; sourceTree = SOURCE_ROOT; };
+		CC594E951DA53AFC00823047 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = DSSearchPhotoPicker/main.m; sourceTree = SOURCE_ROOT; };
+		CC594EB31DA53C9600823047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DSSearchPhotoPicker/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		CC594EB51DA53C9600823047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DSSearchPhotoPicker/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		CC594EB81DA53CAE00823047 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = DSSearchPhotoPicker/ViewController.h; sourceTree = SOURCE_ROOT; };
+		CC594EB91DA53CAE00823047 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = DSSearchPhotoPicker/ViewController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CC594E401DA51ED300823047 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC594E591DA51ED400823047 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC594E641DA51ED400823047 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,8 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				CC594E451DA51ED300823047 /* DSSearchPhotoPicker */,
-				CC594E5F1DA51ED400823047 /* customPhotoPickerTests */,
-				CC594E6A1DA51ED400823047 /* customPhotoPickerUITests */,
 				CC594E441DA51ED300823047 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,8 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				CC594E431DA51ED300823047 /* DSSearchPhotoPicker.app */,
-				CC594E5C1DA51ED400823047 /* DSSearchPhotoPickerTests.xctest */,
-				CC594E671DA51ED400823047 /* DSSearchPhotoPickerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,14 +69,14 @@
 			isa = PBXGroup;
 			children = (
 				CC594E791DA526F500823047 /* customView */,
-				CC594E491DA51ED300823047 /* AppDelegate.h */,
-				CC594E4A1DA51ED300823047 /* AppDelegate.m */,
-				CC594E4C1DA51ED300823047 /* ViewController.h */,
-				CC594E4D1DA51ED300823047 /* ViewController.m */,
-				CC594E4F1DA51ED300823047 /* Main.storyboard */,
-				CC594E521DA51ED300823047 /* Assets.xcassets */,
-				CC594E541DA51ED300823047 /* LaunchScreen.storyboard */,
-				CC594E571DA51ED300823047 /* Info.plist */,
+				CC594E8C1DA53ADF00823047 /* AppDelegate.h */,
+				CC594E8D1DA53ADF00823047 /* AppDelegate.m */,
+				CC594EB81DA53CAE00823047 /* ViewController.h */,
+				CC594EB91DA53CAE00823047 /* ViewController.m */,
+				CC594E8E1DA53ADF00823047 /* Assets.xcassets */,
+				CC594EB21DA53C9600823047 /* LaunchScreen.storyboard */,
+				CC594EB41DA53C9600823047 /* Main.storyboard */,
+				CC594E901DA53ADF00823047 /* Info.plist */,
 				CC594E461DA51ED300823047 /* Supporting Files */,
 			);
 			name = DSSearchPhotoPicker;
@@ -128,38 +86,20 @@
 		CC594E461DA51ED300823047 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CC594E471DA51ED300823047 /* main.m */,
+				CC594E951DA53AFC00823047 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CC594E5F1DA51ED400823047 /* customPhotoPickerTests */ = {
-			isa = PBXGroup;
-			children = (
-				CC594E601DA51ED400823047 /* customPhotoPickerTests.m */,
-				CC594E621DA51ED400823047 /* Info.plist */,
-			);
-			path = customPhotoPickerTests;
-			sourceTree = "<group>";
-		};
-		CC594E6A1DA51ED400823047 /* customPhotoPickerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CC594E6B1DA51ED400823047 /* customPhotoPickerUITests.m */,
-				CC594E6D1DA51ED400823047 /* Info.plist */,
-			);
-			path = customPhotoPickerUITests;
 			sourceTree = "<group>";
 		};
 		CC594E791DA526F500823047 /* customView */ = {
 			isa = PBXGroup;
 			children = (
-				CC594E7A1DA5270E00823047 /* firstView.h */,
-				CC594E7B1DA5270E00823047 /* firstView.m */,
-				CC594E7D1DA5271D00823047 /* secondView.h */,
-				CC594E7E1DA5271D00823047 /* secondView.m */,
-				CC594E801DA5272D00823047 /* thirdView.h */,
-				CC594E811DA5272D00823047 /* thirdView.m */,
+				CC594E831DA53AC100823047 /* firstView.h */,
+				CC594E841DA53AC100823047 /* firstView.m */,
+				CC594E851DA53AC100823047 /* secondView.h */,
+				CC594E861DA53AC100823047 /* secondView.m */,
+				CC594E871DA53AC100823047 /* thirdView.h */,
+				CC594E881DA53AC100823047 /* thirdView.m */,
 			);
 			name = customView;
 			sourceTree = "<group>";
@@ -184,42 +124,6 @@
 			productReference = CC594E431DA51ED300823047 /* DSSearchPhotoPicker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CC594E5B1DA51ED400823047 /* DSSearchPhotoPickerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CC594E731DA51ED400823047 /* Build configuration list for PBXNativeTarget "DSSearchPhotoPickerTests" */;
-			buildPhases = (
-				CC594E581DA51ED400823047 /* Sources */,
-				CC594E591DA51ED400823047 /* Frameworks */,
-				CC594E5A1DA51ED400823047 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CC594E5E1DA51ED400823047 /* PBXTargetDependency */,
-			);
-			name = DSSearchPhotoPickerTests;
-			productName = customPhotoPickerTests;
-			productReference = CC594E5C1DA51ED400823047 /* DSSearchPhotoPickerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CC594E661DA51ED400823047 /* DSSearchPhotoPickerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CC594E761DA51ED400823047 /* Build configuration list for PBXNativeTarget "DSSearchPhotoPickerUITests" */;
-			buildPhases = (
-				CC594E631DA51ED400823047 /* Sources */,
-				CC594E641DA51ED400823047 /* Frameworks */,
-				CC594E651DA51ED400823047 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CC594E691DA51ED400823047 /* PBXTargetDependency */,
-			);
-			name = DSSearchPhotoPickerUITests;
-			productName = customPhotoPickerUITests;
-			productReference = CC594E671DA51ED400823047 /* DSSearchPhotoPickerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -233,16 +137,6 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 5C79GLKU9M;
 						ProvisioningStyle = Automatic;
-					};
-					CC594E5B1DA51ED400823047 = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = CC594E421DA51ED300823047;
-					};
-					CC594E661DA51ED400823047 = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = CC594E421DA51ED300823047;
 					};
 				};
 			};
@@ -260,8 +154,6 @@
 			projectRoot = "";
 			targets = (
 				CC594E421DA51ED300823047 /* DSSearchPhotoPicker */,
-				CC594E5B1DA51ED400823047 /* DSSearchPhotoPickerTests */,
-				CC594E661DA51ED400823047 /* DSSearchPhotoPickerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,23 +163,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC594E561DA51ED300823047 /* LaunchScreen.storyboard in Resources */,
-				CC594E531DA51ED300823047 /* Assets.xcassets in Resources */,
-				CC594E511DA51ED300823047 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC594E5A1DA51ED400823047 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC594E651DA51ED400823047 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				CC594EB61DA53C9600823047 /* LaunchScreen.storyboard in Resources */,
+				CC594E9F1DA53B9000823047 /* Info.plist in Resources */,
+				CC594E921DA53ADF00823047 /* Assets.xcassets in Resources */,
+				CC594EB71DA53C9600823047 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,61 +177,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC594E4E1DA51ED300823047 /* ViewController.m in Sources */,
-				CC594E7C1DA5270E00823047 /* firstView.m in Sources */,
-				CC594E4B1DA51ED300823047 /* AppDelegate.m in Sources */,
-				CC594E7F1DA5271D00823047 /* secondView.m in Sources */,
-				CC594E821DA5272D00823047 /* thirdView.m in Sources */,
-				CC594E481DA51ED300823047 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC594E581DA51ED400823047 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC594E611DA51ED400823047 /* customPhotoPickerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC594E631DA51ED400823047 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC594E6C1DA51ED400823047 /* customPhotoPickerUITests.m in Sources */,
+				CC594EBA1DA53CAE00823047 /* ViewController.m in Sources */,
+				CC594E961DA53AFC00823047 /* main.m in Sources */,
+				CC594E891DA53AC100823047 /* firstView.m in Sources */,
+				CC594E8A1DA53AC100823047 /* secondView.m in Sources */,
+				CC594E8B1DA53AC100823047 /* thirdView.m in Sources */,
+				CC594E911DA53ADF00823047 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		CC594E5E1DA51ED400823047 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CC594E421DA51ED300823047 /* DSSearchPhotoPicker */;
-			targetProxy = CC594E5D1DA51ED400823047 /* PBXContainerItemProxy */;
-		};
-		CC594E691DA51ED400823047 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CC594E421DA51ED300823047 /* DSSearchPhotoPicker */;
-			targetProxy = CC594E681DA51ED400823047 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		CC594E4F1DA51ED300823047 /* Main.storyboard */ = {
+		CC594EB21DA53C9600823047 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CC594E501DA51ED300823047 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CC594E541DA51ED300823047 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CC594E551DA51ED300823047 /* Base */,
+				CC594EB31DA53C9600823047 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CC594EB41DA53C9600823047 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC594EB51DA53C9600823047 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -453,9 +303,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5C79GLKU9M;
-				INFOPLIST_FILE = customPhotoPicker/Info.plist;
+				INFOPLIST_FILE = DSSearchPhotoPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = designString.customPhotoPicker;
+				PRODUCT_BUNDLE_IDENTIFIER = designString.DSSearchPhotoPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -465,56 +315,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5C79GLKU9M;
-				INFOPLIST_FILE = customPhotoPicker/Info.plist;
+				INFOPLIST_FILE = DSSearchPhotoPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = designString.customPhotoPicker;
+				PRODUCT_BUNDLE_IDENTIFIER = designString.DSSearchPhotoPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		CC594E741DA51ED400823047 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = customPhotoPickerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = designString.customPhotoPickerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSSearchPhotoPicker.app/DSSearchPhotoPicker";
-			};
-			name = Debug;
-		};
-		CC594E751DA51ED400823047 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = customPhotoPickerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = designString.customPhotoPickerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSSearchPhotoPicker.app/DSSearchPhotoPicker";
-			};
-			name = Release;
-		};
-		CC594E771DA51ED400823047 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = customPhotoPickerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = designString.customPhotoPickerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = customPhotoPicker;
-			};
-			name = Debug;
-		};
-		CC594E781DA51ED400823047 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = customPhotoPickerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = designString.customPhotoPickerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = customPhotoPicker;
 			};
 			name = Release;
 		};
@@ -537,22 +341,7 @@
 				CC594E721DA51ED400823047 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		CC594E731DA51ED400823047 /* Build configuration list for PBXNativeTarget "DSSearchPhotoPickerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC594E741DA51ED400823047 /* Debug */,
-				CC594E751DA51ED400823047 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		CC594E761DA51ED400823047 /* Build configuration list for PBXNativeTarget "DSSearchPhotoPickerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC594E771DA51ED400823047 /* Debug */,
-				CC594E781DA51ED400823047 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
