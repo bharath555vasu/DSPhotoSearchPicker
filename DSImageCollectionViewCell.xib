@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,14 +14,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B0A-EG-b0h"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B0A-EG-b0h"/>
                 </subviews>
             </view>
+            <color key="backgroundColor" red="0.1064528599" green="0.51353907590000003" blue="0.42891275880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="B0A-EG-b0h" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="7s8-QZ-ADw"/>
+                <constraint firstItem="B0A-EG-b0h" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="0.5" id="7s8-QZ-ADw"/>
                 <constraint firstAttribute="bottom" secondItem="B0A-EG-b0h" secondAttribute="bottom" constant="2" id="9ow-BY-p6y"/>
                 <constraint firstAttribute="trailing" secondItem="B0A-EG-b0h" secondAttribute="trailing" constant="2" id="l50-lJ-tFL"/>
-                <constraint firstItem="B0A-EG-b0h" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="tM4-S6-re7"/>
+                <constraint firstItem="B0A-EG-b0h" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="0.5" id="tM4-S6-re7"/>
             </constraints>
             <connections>
                 <outlet property="imageCell" destination="B0A-EG-b0h" id="25p-dz-HrS"/>

@@ -211,7 +211,7 @@
        viewB.passedResult = searchQuery;
     viewC.passedResult = searchQuery;
     if (_segControl.selectedSegmentIndex==0) {
-        [viewA viewWillAppear:YES];
+        [viewA getImages:0];
     }else if (_segControl.selectedSegmentIndex==1){
         [viewB viewWillAppear:YES];
 

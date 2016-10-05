@@ -113,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				8E7EDFE51DA53E75003E5BFF /* DSCollectionView */,
-				CC594E791DA526F500823047 /* customView */,
+				CC594E791DA526F500823047 /* DSCustomView */,
 				CC594E8C1DA53ADF00823047 /* AppDelegate.h */,
 				CC594E8D1DA53ADF00823047 /* AppDelegate.m */,
 				CC594EB81DA53CAE00823047 /* ViewController.h */,
@@ -136,7 +136,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CC594E791DA526F500823047 /* customView */ = {
+		CC594E791DA526F500823047 /* DSCustomView */ = {
 			isa = PBXGroup;
 			children = (
 				CC594E831DA53AC100823047 /* firstView.h */,
@@ -146,7 +146,7 @@
 				CC594E871DA53AC100823047 /* thirdView.h */,
 				CC594E881DA53AC100823047 /* thirdView.m */,
 			);
-			name = customView;
+			name = DSCustomView;
 			sourceTree = "<group>";
 		};
 		EB5833F33547AE011B9CCE27 /* Frameworks */ = {

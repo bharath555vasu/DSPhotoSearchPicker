@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface firstView : UIViewController
+#import "DSImageCollectionViewCell.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+@interface firstView : UIViewController <UICollectionViewDelegate,UICollectionViewDataSource>
 @property( strong,nonatomic) NSString * passedResult;
+- (void)getImages:(int)pageId;
 @end

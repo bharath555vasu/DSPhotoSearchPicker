@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface secondView : UIViewController
+#import "DSImageCollectionViewCell.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+@interface secondView : UIViewController <UICollectionViewDelegate,UICollectionViewDataSource>
 @property( strong,nonatomic) NSString * passedResult;
 @end

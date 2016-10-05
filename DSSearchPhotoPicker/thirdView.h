@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DSImageCollectionViewCell.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
-@interface thirdView : UIViewController
+@interface thirdView : UIViewController <UICollectionViewDelegate,UICollectionViewDataSource>
+
 @property( strong,nonatomic) NSString * passedResult;
 @end
