@@ -9,7 +9,7 @@
 #import "DSThirdView.h"
 
 @interface DSThirdView (){
-    NSIndexPath *currentIndexPath;
+
 }
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) DSImageCollectionViewCell *imageViewCell;
@@ -27,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //*************ARRAY********************
-    _imageArray = @[@{@"title":@"fixed_height_still",@"url":@"http://media0.giphy.com/media/CYdCjeJIjuVO/200_s.gif"},@{@"title":@"fixed_height_downsampled",@"url":@"http://media0.giphy.com/media/CYdCjeJIjuVO/200_d.gif"},@{@"title":@"fixed_width",@"url":@"http://media0.giphy.com/media/CYdCjeJIjuVO/200w.gif"},@{@"title":@"fixed_width_still",@"url":@"http://media0.giphy.com/media/CYdCjeJIjuVO/200w_s.gif"},@{@"title":@"fixed_width_downsampled",@"url":@"http://media0.giphy.com/media/CYdCjeJIjuVO/200w_d.gif"}];
+    _imageArray = @[@"http://media0.giphy.com/media/CYdCjeJIjuVO/200_s.gif",@"http://media0.giphy.com/media/CYdCjeJIjuVO/200_d.gif",@"http://media0.giphy.com/media/CYdCjeJIjuVO/200w.gif",@"http://media0.giphy.com/media/CYdCjeJIjuVO/200w_s.gif",@"http://media0.giphy.com/media/CYdCjeJIjuVO/200w_d.gif"];
     
     
     
@@ -59,13 +59,12 @@
 - (UICollectionViewCell*)collectionView:(UICollectionView*)collectionView
                  cellForItemAtIndexPath:(NSIndexPath*)indexPath
 {
-    NSDictionary *productDict = _imageArray[indexPath.item];
-    currentIndexPath= [NSIndexPath indexPathForItem:indexPath.item inSection:0];
+  
     _imageViewCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"imageView"
                                                                forIndexPath:indexPath];
     //   _imageViewCell.imageCell.image = [UIImage imageNamed:[productDict objectForKey:@"url"]];
     
-    [_imageViewCell.imageCell sd_setImageWithURL:[NSURL URLWithString:[productDict objectForKey:@"url"]]
+    [_imageViewCell.imageCell sd_setImageWithURL:[NSURL URLWithString:_imageArray[indexPath.item]]
                                 placeholderImage:[UIImage imageNamed:@""]
                                          options:SDWebImageRefreshCached];
     return _imageViewCell;
@@ -75,16 +74,7 @@
 {
    return CGSizeMake(self.collectionView.frame.size.width/4, self.self.collectionView.frame.size.width/4);
 }
--(int)getCurrentIndexItem:(int)toAppend{
-    NSIndexPath *indexPath = nil;
-    int currentIndex = 0;
-    for (UICollectionViewCell *cell in [self.collectionView visibleCells]) {
-        indexPath = [self.collectionView indexPathForCell:cell];
-        NSLog(@"%@",indexPath);
-    }
-    currentIndex = (int)indexPath.item + toAppend;
-    return currentIndex;
-}
+
 
 
 @end

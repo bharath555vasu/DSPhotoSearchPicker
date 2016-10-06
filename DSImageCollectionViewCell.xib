@@ -17,7 +17,6 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B0A-EG-b0h"/>
                 </subviews>
             </view>
-            <color key="backgroundColor" red="0.1064528599" green="0.51353907590000003" blue="0.42891275880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="B0A-EG-b0h" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="0.5" id="7s8-QZ-ADw"/>
                 <constraint firstAttribute="bottom" secondItem="B0A-EG-b0h" secondAttribute="bottom" constant="2" id="9ow-BY-p6y"/>

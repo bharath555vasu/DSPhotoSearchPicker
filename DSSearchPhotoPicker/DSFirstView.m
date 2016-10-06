@@ -32,14 +32,9 @@
     
     NSLog(@"first view: %@",_passedResult);
     //****Register CollectionView class and cell******
-    imageArray = @[@"http://giphy.com/gifs/funny-school-fails-BTK92zTVQZopq",
-                   @"http://giphy.com/gifs/SQiQu6lbG8bn2",
-                   @"http://giphy.com/gifs/geozuBY5Y6cXm",
-                   @"http://giphy.com/gifs/test-testing-expected-7MZ0v9KynmiSA",
-                   @"http://giphy.com/gifs/archiecomics-archie-comics-archies-weird-mysteries-brain-of-terror-xT1XGWGd90BrYwnTl6"];
     self.collectionView.dataSource = self;
      self.collectionView.delegate = self;
-    [self.collectionView reloadData];
+
     [self.collectionView layoutIfNeeded];
     pageNumber = 0;
    /// [self getImages:pageNumber];
@@ -76,14 +71,26 @@
     DSImageCollectionViewCell *imageViewCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"imageView"
                                                                forIndexPath:indexPath];
     //   _imageViewCell.imageCell.image = [UIImage imageNamed:[productDict objectForKey:@"url"]];
-   
-    [imageViewCell.imageCell sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/giphy.gif",imageArray[indexPath.item]]]
+    [imageViewCell.imageCell sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://media1.giphy.com/media/%@/100.gif",imageArray[indexPath.item]]]
                                 placeholderImage:[UIImage imageNamed:@""]];
-     NSLog(@"image url: %@",[NSString stringWithFormat:@"%@/giphy.gif",imageArray[indexPath.item]]);
+     NSLog(@"image url: %@",[NSString stringWithFormat:@"https://media1.giphy.com/media/%@/100.gif",imageArray[indexPath.item]]);
     
     return imageViewCell;
 }
-
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath{
+  
+    NSInteger lastRowIndex = [_collectionView numberOfItemsInSection:0] - 2;
+    if ((indexPath.section == 0) && (indexPath.row == lastRowIndex)) {
+        // This is the last cell
+        NSLog(@"last cell");
+        if(_isPageRefreshing==NO && _isRefreshing == NO){
+            _isPageRefreshing = YES;
+            _isRefreshing = YES;
+                        [self getImages:pageNumber++];
+        }
+        
+    }
+}
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
@@ -105,7 +112,7 @@
 - (void)getImages:(int)pageId
 {
  
-    
+     NSString  *pageNumberString = [NSString stringWithFormat:@"%d",pageNumber];
     NSString *value = _passedResult;
     value = [value stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLUserAllowedCharacterSet]];
     // Users Sign UP (POST Users/)
@@ -117,7 +124,7 @@
     [manager.requestSerializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain",@"application/json",nil];
-    NSString * serviceUrl =[NSString stringWithFormat:@"http://api.giphy.com/v1/gifs/search?q=%@&api_key=dc6zaTOxFJmzC&limit=44&page=%d&rating=pg",value,pageId];
+    NSString * serviceUrl =[NSString stringWithFormat:@"http://api.giphy.com/v1/gifs/search?q=%@&api_key=dc6zaTOxFJmzC&limit=44&page=%@&rating=pg",value,pageNumberString];
     NSLog(@"getImages url: %@",serviceUrl);
    
     [manager GET:serviceUrl parameters:nil progress:nil success:^(NSURLSessionTask* task, id results) {
@@ -126,7 +133,7 @@
         NSDictionary *json = [NSJSONSerialization JSONObjectWithData:results options:NSJSONReadingMutableLeaves | NSJSONReadingAllowFragments error:nil];
         
         
-        imageArray = [json valueForKeyPath:@"data.url"];
+        imageArray = [json valueForKeyPath:@"data.id"];
         NSLog(@"JSON getImages printed: %@", imageArray);
                   [self.collectionView reloadData];
       
@@ -148,6 +155,7 @@
         if(_isPageRefreshing==NO && _isRefreshing == NO){
             _isPageRefreshing = YES;
             _isRefreshing = YES;
+            NSLog(@"api set again");
             [self getImages:pageNumber++];
         }
     }

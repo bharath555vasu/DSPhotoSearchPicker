@@ -121,6 +121,9 @@
     self.segControl.selectedSegmentIndex = 0;
     [self cycleFromViewController:self.currentViewController toViewController:[self.allViewControllers objectAtIndex:self.segControl.selectedSegmentIndex]];
 }
+-(void)updateSearchResultsForSearchController:(UISearchController *)searchController{
+    NSLog(@"serach results updating!!");
+}
 #pragma mark - View controller switching and saving
 
 - (void)cycleFromViewController:(UIViewController*)oldVC toViewController:(UIViewController*)newVC {
@@ -237,7 +240,7 @@
         isFilltered = YES;
         NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"SELF.firstname contains[cd] %@",searchText];
         searchResults =[[NSMutableArray alloc]initWithArray:[mainList filteredArrayUsingPredicate:resultPredicate]];
-        NSLog(@"Search result: %@",searchResults);
+    
     }
     [_searchTable reloadData];
 }
@@ -272,7 +275,7 @@
     UILabel * email = (UILabel *) [cell viewWithTag:3];
     name.text = [NSString stringWithFormat:@"%@",[selectedOption objectForKey:@"firstname"]];
     email.text = [NSString stringWithFormat:@"%@",[selectedOption objectForKey:@"label"]];
-    NSString * profileImage = [selectedOption objectForKey:@"value"];
+//    NSString * profileImage = [selectedOption objectForKey:@"value"];
     profilePic.layer.cornerRadius = profilePic.frame.size.width/2;
     profilePic.clipsToBounds=YES;
     //[FAUtilityManager removeCacheForURL:profileImage];
