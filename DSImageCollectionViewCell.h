@@ -14,6 +14,6 @@
 @end
 
 @interface DSImageCollectionViewCell : UICollectionViewCell
-    @property (strong, nonatomic) IBOutlet UIImageView *imageCell;
+@property (strong, nonatomic) IBOutlet UIImageView *imageCell;
 @property (nonatomic,retain)id <photoHandeler> photoDelegate;
 @end

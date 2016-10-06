@@ -1,14 +1,14 @@
 //
-//  thirdView.m
+//  DSThirdView.m
 //  customPhotoPicker
 //
 //  Created by Ruthwick S Rai on 05/10/16.
 //  Copyright © 2016 Ruthwick S Rai. All rights reserved.
 //
 
-#import "thirdView.h"
+#import "DSThirdView.h"
 
-@interface thirdView (){
+@interface DSThirdView (){
     NSIndexPath *currentIndexPath;
 }
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation thirdView
+@implementation DSThirdView
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
@@ -37,6 +37,8 @@
     self.collectionView.dataSource = self;
     [self.collectionView registerClass:[_imageViewCell class] forCellWithReuseIdentifier:@"imageView"];
     [self.collectionView registerNib: [UINib nibWithNibName:@"DSImageCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"imageView"] ;
+    [self.collectionView layoutIfNeeded];
+
 }
 
 - (void)didReceiveMemoryWarning {

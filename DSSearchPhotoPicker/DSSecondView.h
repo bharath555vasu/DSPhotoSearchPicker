@@ -1,5 +1,5 @@
 //
-//  secondView.h
+//  DSSecondView.h
 //  customPhotoPicker
 //
 //  Created by Ruthwick S Rai on 05/10/16.
@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "DSImageCollectionViewCell.h"
 #import <SDWebImage/UIImageView+WebCache.h>
-@interface secondView : UIViewController <UICollectionViewDelegate,UICollectionViewDataSource>
+@interface DSSecondView : UIViewController <UICollectionViewDelegate,UICollectionViewDataSource>
 @property( strong,nonatomic) NSString * passedResult;
 @end

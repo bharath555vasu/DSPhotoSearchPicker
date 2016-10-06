@@ -1,5 +1,5 @@
 //
-//  thirdView.h
+//  DSThirdView.h
 //  customPhotoPicker
 //
 //  Created by Ruthwick S Rai on 05/10/16.
@@ -10,7 +10,7 @@
 #import "DSImageCollectionViewCell.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface thirdView : UIViewController <UICollectionViewDelegate,UICollectionViewDataSource>
+@interface DSThirdView : UIViewController <UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property( strong,nonatomic) NSString * passedResult;
 @end

@@ -1,25 +1,25 @@
 //
-//  ViewController.m
+//  DSViewController.m
 //  customPhotoPicker
 //
 //  Created by Ruthwick S Rai on 05/10/16.
 //  Copyright © 2016 Ruthwick S Rai. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "firstView.h"
-#import "secondView.h"
-#import "thirdView.h"
-@interface ViewController ()<UISearchBarDelegate, UISearchControllerDelegate,UISearchResultsUpdating, UISearchDisplayDelegate,UITableViewDelegate,UITableViewDataSource>{
+#import "DSViewController.h"
+#import "DSFirstView.h"
+#import "DSSecondView.h"
+#import "DSThirdView.h"
+@interface DSViewController ()<UISearchBarDelegate, UISearchControllerDelegate,UISearchResultsUpdating, UISearchDisplayDelegate,UITableViewDelegate,UITableViewDataSource>{
     NSString * searchQuery;
     NSMutableArray* searchResults;NSMutableArray* mainList;
     BOOL isFilltered;
     NSDictionary *searchHandler;
     NSMutableDictionary * selectedOption;
     
-    firstView * viewA;
-    secondView * viewB;
-    thirdView * viewC;
+    DSFirstView * viewA;
+    DSSecondView * viewB;
+    DSThirdView * viewC;
     
     
 }
@@ -45,7 +45,7 @@
 
 @end
 
-@implementation ViewController
+@implementation DSViewController
 - (void)viewWillAppear:(BOOL)animated {
     _segControl.tintColor=[UIColor whiteColor];
     [[UITextField
@@ -134,7 +134,8 @@
         // Set the new view controller frame (in this case to be the size of the available screen bounds)
         // Calulate any other frame animations here (e.g. for the oldVC)
         newVC.view.frame = CGRectMake(CGRectGetMinX(self.view.bounds), 40, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)-20);
-        
+        [newVC.view layoutIfNeeded];
+        [newVC.view setNeedsLayout];
         // Check the oldVC is non-nil otherwise expect a crash: NSInvalidArgumentException
         if (oldVC) {
             

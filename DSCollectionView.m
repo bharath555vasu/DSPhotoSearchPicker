@@ -32,6 +32,8 @@
     self.collectionView.dataSource = self;
     [self.collectionView registerClass:[_imageViewCell class] forCellWithReuseIdentifier:@"imageView"];
     [self.collectionView registerNib: [UINib nibWithNibName:@"DSImageCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"imageView"] ;
+    [self.collectionView layoutIfNeeded];
+    [self.collectionView setNeedsLayout];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

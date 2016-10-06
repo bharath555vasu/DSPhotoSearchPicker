@@ -11,16 +11,16 @@
 		8E7EDFE81DA53E87003E5BFF /* DSCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7EDFE71DA53E87003E5BFF /* DSCollectionView.m */; };
 		8E7EDFED1DA53ECF003E5BFF /* DSImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7EDFEB1DA53ECF003E5BFF /* DSImageCollectionViewCell.m */; };
 		8E7EDFEE1DA53ECF003E5BFF /* DSImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E7EDFEC1DA53ECF003E5BFF /* DSImageCollectionViewCell.xib */; };
-		CC594E891DA53AC100823047 /* firstView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E841DA53AC100823047 /* firstView.m */; };
-		CC594E8A1DA53AC100823047 /* secondView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E861DA53AC100823047 /* secondView.m */; };
-		CC594E8B1DA53AC100823047 /* thirdView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E881DA53AC100823047 /* thirdView.m */; };
+		CC594E891DA53AC100823047 /* DSFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E841DA53AC100823047 /* DSFirstView.m */; };
+		CC594E8A1DA53AC100823047 /* DSSecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E861DA53AC100823047 /* DSSecondView.m */; };
+		CC594E8B1DA53AC100823047 /* DSThirdView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E881DA53AC100823047 /* DSThirdView.m */; };
 		CC594E911DA53ADF00823047 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E8D1DA53ADF00823047 /* AppDelegate.m */; };
 		CC594E921DA53ADF00823047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC594E8E1DA53ADF00823047 /* Assets.xcassets */; };
 		CC594E961DA53AFC00823047 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E951DA53AFC00823047 /* main.m */; };
 		CC594E9F1DA53B9000823047 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC594E901DA53ADF00823047 /* Info.plist */; };
 		CC594EB61DA53C9600823047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC594EB21DA53C9600823047 /* LaunchScreen.storyboard */; };
 		CC594EB71DA53C9600823047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC594EB41DA53C9600823047 /* Main.storyboard */; };
-		CC594EBA1DA53CAE00823047 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594EB91DA53CAE00823047 /* ViewController.m */; };
+		CC594EBA1DA53CAE00823047 /* DSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594EB91DA53CAE00823047 /* DSViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,12 +32,12 @@
 		8E7EDFEB1DA53ECF003E5BFF /* DSImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSImageCollectionViewCell.m; sourceTree = SOURCE_ROOT; };
 		8E7EDFEC1DA53ECF003E5BFF /* DSImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSImageCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
 		CC594E431DA51ED300823047 /* DSSearchPhotoPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSSearchPhotoPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC594E831DA53AC100823047 /* firstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = firstView.h; path = DSSearchPhotoPicker/firstView.h; sourceTree = SOURCE_ROOT; };
-		CC594E841DA53AC100823047 /* firstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = firstView.m; path = DSSearchPhotoPicker/firstView.m; sourceTree = SOURCE_ROOT; };
-		CC594E851DA53AC100823047 /* secondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = secondView.h; path = DSSearchPhotoPicker/secondView.h; sourceTree = SOURCE_ROOT; };
-		CC594E861DA53AC100823047 /* secondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = secondView.m; path = DSSearchPhotoPicker/secondView.m; sourceTree = SOURCE_ROOT; };
-		CC594E871DA53AC100823047 /* thirdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = thirdView.h; path = DSSearchPhotoPicker/thirdView.h; sourceTree = SOURCE_ROOT; };
-		CC594E881DA53AC100823047 /* thirdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = thirdView.m; path = DSSearchPhotoPicker/thirdView.m; sourceTree = SOURCE_ROOT; };
+		CC594E831DA53AC100823047 /* DSFirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSFirstView.h; path = DSSearchPhotoPicker/DSFirstView.h; sourceTree = SOURCE_ROOT; };
+		CC594E841DA53AC100823047 /* DSFirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSFirstView.m; path = DSSearchPhotoPicker/DSFirstView.m; sourceTree = SOURCE_ROOT; };
+		CC594E851DA53AC100823047 /* DSSecondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSSecondView.h; path = DSSearchPhotoPicker/DSSecondView.h; sourceTree = SOURCE_ROOT; };
+		CC594E861DA53AC100823047 /* DSSecondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSSecondView.m; path = DSSearchPhotoPicker/DSSecondView.m; sourceTree = SOURCE_ROOT; };
+		CC594E871DA53AC100823047 /* DSThirdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSThirdView.h; path = DSSearchPhotoPicker/DSThirdView.h; sourceTree = SOURCE_ROOT; };
+		CC594E881DA53AC100823047 /* DSThirdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSThirdView.m; path = DSSearchPhotoPicker/DSThirdView.m; sourceTree = SOURCE_ROOT; };
 		CC594E8C1DA53ADF00823047 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = DSSearchPhotoPicker/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		CC594E8D1DA53ADF00823047 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = DSSearchPhotoPicker/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		CC594E8E1DA53ADF00823047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = DSSearchPhotoPicker/Assets.xcassets; sourceTree = SOURCE_ROOT; };
@@ -45,8 +45,8 @@
 		CC594E951DA53AFC00823047 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = DSSearchPhotoPicker/main.m; sourceTree = SOURCE_ROOT; };
 		CC594EB31DA53C9600823047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DSSearchPhotoPicker/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		CC594EB51DA53C9600823047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DSSearchPhotoPicker/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
-		CC594EB81DA53CAE00823047 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = DSSearchPhotoPicker/ViewController.h; sourceTree = SOURCE_ROOT; };
-		CC594EB91DA53CAE00823047 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = DSSearchPhotoPicker/ViewController.m; sourceTree = SOURCE_ROOT; };
+		CC594EB81DA53CAE00823047 /* DSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSViewController.h; path = DSSearchPhotoPicker/DSViewController.h; sourceTree = SOURCE_ROOT; };
+		CC594EB91DA53CAE00823047 /* DSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSViewController.m; path = DSSearchPhotoPicker/DSViewController.m; sourceTree = SOURCE_ROOT; };
 		FE5878D118C7BB51370B0950 /* Pods-DSSearchPhotoPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSSearchPhotoPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSSearchPhotoPicker/Pods-DSSearchPhotoPicker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,11 +113,11 @@
 			isa = PBXGroup;
 			children = (
 				8E7EDFE51DA53E75003E5BFF /* DSCollectionView */,
-				CC594E791DA526F500823047 /* DSCustomView */,
+				CC594E791DA526F500823047 /* DSCycleView */,
 				CC594E8C1DA53ADF00823047 /* AppDelegate.h */,
 				CC594E8D1DA53ADF00823047 /* AppDelegate.m */,
-				CC594EB81DA53CAE00823047 /* ViewController.h */,
-				CC594EB91DA53CAE00823047 /* ViewController.m */,
+				CC594EB81DA53CAE00823047 /* DSViewController.h */,
+				CC594EB91DA53CAE00823047 /* DSViewController.m */,
 				CC594E8E1DA53ADF00823047 /* Assets.xcassets */,
 				CC594EB21DA53C9600823047 /* LaunchScreen.storyboard */,
 				CC594EB41DA53C9600823047 /* Main.storyboard */,
@@ -136,17 +136,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CC594E791DA526F500823047 /* DSCustomView */ = {
+		CC594E791DA526F500823047 /* DSCycleView */ = {
 			isa = PBXGroup;
 			children = (
-				CC594E831DA53AC100823047 /* firstView.h */,
-				CC594E841DA53AC100823047 /* firstView.m */,
-				CC594E851DA53AC100823047 /* secondView.h */,
-				CC594E861DA53AC100823047 /* secondView.m */,
-				CC594E871DA53AC100823047 /* thirdView.h */,
-				CC594E881DA53AC100823047 /* thirdView.m */,
+				CC594E831DA53AC100823047 /* DSFirstView.h */,
+				CC594E841DA53AC100823047 /* DSFirstView.m */,
+				CC594E851DA53AC100823047 /* DSSecondView.h */,
+				CC594E861DA53AC100823047 /* DSSecondView.m */,
+				CC594E871DA53AC100823047 /* DSThirdView.h */,
+				CC594E881DA53AC100823047 /* DSThirdView.m */,
 			);
-			name = DSCustomView;
+			name = DSCycleView;
 			sourceTree = "<group>";
 		};
 		EB5833F33547AE011B9CCE27 /* Frameworks */ = {
@@ -282,11 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC594EBA1DA53CAE00823047 /* ViewController.m in Sources */,
+				CC594EBA1DA53CAE00823047 /* DSViewController.m in Sources */,
 				CC594E961DA53AFC00823047 /* main.m in Sources */,
-				CC594E891DA53AC100823047 /* firstView.m in Sources */,
-				CC594E8A1DA53AC100823047 /* secondView.m in Sources */,
-				CC594E8B1DA53AC100823047 /* thirdView.m in Sources */,
+				CC594E891DA53AC100823047 /* DSFirstView.m in Sources */,
+				CC594E8A1DA53AC100823047 /* DSSecondView.m in Sources */,
+				CC594E8B1DA53AC100823047 /* DSThirdView.m in Sources */,
 				CC594E911DA53ADF00823047 /* AppDelegate.m in Sources */,
 				8E7EDFE81DA53E87003E5BFF /* DSCollectionView.m in Sources */,
 				8E7EDFED1DA53ECF003E5BFF /* DSImageCollectionViewCell.m in Sources */,

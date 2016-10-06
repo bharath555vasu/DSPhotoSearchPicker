@@ -12,7 +12,12 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    [self layoutIfNeeded];
+    [self setNeedsLayout];
     // Initialization code
 }
-
+- (void)didMoveToSuperview {
+    [self layoutIfNeeded];
+    [self setNeedsLayout];
+}
 @end

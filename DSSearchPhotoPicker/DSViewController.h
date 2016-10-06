@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DSViewController.h
 //  customPhotoPicker
 //
 //  Created by Ruthwick S Rai on 05/10/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface DSViewController : UIViewController
 
 
 @end

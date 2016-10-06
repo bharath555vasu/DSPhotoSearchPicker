@@ -1,14 +1,14 @@
 //
-//  firstView.m
+//  DSSecondView.m
 //  customPhotoPicker
 //
 //  Created by Ruthwick S Rai on 05/10/16.
 //  Copyright © 2016 Ruthwick S Rai. All rights reserved.
 //
 
-#import "firstView.h"
+#import "DSSecondView.h"
 #import "AFNetworking.h"
-@interface firstView ()
+@interface DSSecondView ()
 {
     NSIndexPath *currentIndexPath;
     int pageNumber;
@@ -18,28 +18,28 @@
 @property (nonatomic)BOOL isPageRefreshing;
 @property (nonatomic)BOOL pullRefreshChecker;
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (strong, nonatomic) DSImageCollectionViewCell *imageViewCell;
 @property (strong,nonatomic) NSArray *imageArray;
 @end
 
-@implementation firstView
+@implementation DSSecondView
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-}
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    
-    NSLog(@"first view: %@",_passedResult);
+    NSLog(@"second view: %@",_passedResult);
     //****Register CollectionView class and cell******
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
-   
+    [self.collectionView registerClass:[_imageViewCell class] forCellWithReuseIdentifier:@"imageView"];
+    [self.collectionView registerNib: [UINib nibWithNibName:@"DSImageCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"imageView"] ;
     pageNumber = 0;
+    [self.collectionView layoutIfNeeded];
     [self getImages:pageNumber];
+}
 
-    
-
+- (void)viewDidLoad {
+    [super viewDidLoad];
+   
 }
 
 - (void)didReceiveMemoryWarning {
@@ -61,24 +61,18 @@
 - (UICollectionViewCell*)collectionView:(UICollectionView*)collectionView
                  cellForItemAtIndexPath:(NSIndexPath*)indexPath
 {
-   
-    [self.collectionView registerClass:[DSImageCollectionViewCell class] forCellWithReuseIdentifier:@"imageView"];
-    [self.collectionView registerNib: [UINib nibWithNibName:@"DSImageCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"imageView"] ;
-    
-  
-    DSImageCollectionViewCell *imageViewCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"imageView"
+    _imageViewCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"imageView"
                                                                forIndexPath:indexPath];
     //   _imageViewCell.imageCell.image = [UIImage imageNamed:[productDict objectForKey:@"url"]];
     NSLog(@"image url: %@",_imageArray[indexPath.item]);
-    [imageViewCell.imageCell sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/giphy.gif",_imageArray[indexPath.item]]]
+    [_imageViewCell.imageCell sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/giphy.gif",_imageArray[indexPath.item]]]
                                 placeholderImage:[UIImage imageNamed:@""]
                                          options:SDWebImageRefreshCached];
-    return imageViewCell;
-}
+    return _imageViewCell;}
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(self.collectionView.frame.size.width/4, self.self.collectionView.frame.size.width/4);
+   return CGSizeMake(self.collectionView.frame.size.width/4, self.self.collectionView.frame.size.width/4);
 }
 -(int)getCurrentIndexItem:(int)toAppend{
     NSIndexPath *indexPath = nil;
@@ -92,13 +86,13 @@
 }
 - (void)getImages:(int)pageId
 {
- 
+    
     
     NSString *value = _passedResult;
     value = [value stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLUserAllowedCharacterSet]];
     // Users Sign UP (POST Users/)
     // Create manager
-   
+    
     AFHTTPSessionManager* manager = [AFHTTPSessionManager manager];
     
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
@@ -107,12 +101,12 @@
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain",@"application/json",nil];
     NSString * serviceUrl =[NSString stringWithFormat:@"http://api.giphy.com/v1/gifs/search?q=%@&api_key=dc6zaTOxFJmzC&limit=44&page=%d&rating=pg",value,pageId];
     NSLog(@"getImages url: %@",serviceUrl);
-   
+    
     [manager GET:serviceUrl parameters:nil progress:nil success:^(NSURLSessionTask* task, id results) {
-       
+        
         
         NSDictionary *json = [NSJSONSerialization JSONObjectWithData:results options:NSJSONReadingMutableLeaves | NSJSONReadingAllowFragments error:nil];
-         NSLog(@"JSON getImages printed: %@", json);
+        NSLog(@"JSON getImages printed: %@", json);
         
         _imageArray = [json valueForKeyPath:@"data.url"];
         
@@ -120,7 +114,7 @@
     }
          failure:^(NSURLSessionTask* operation, NSError* error) {
              
-                        NSLog(@"Error getImages printed: %@", error);
+             NSLog(@"Error getImages printed: %@", error);
          }];
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
