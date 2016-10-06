@@ -12,14 +12,14 @@
 {
    // NSIndexPath *currentIndexPath;
     int pageNumber;
-    NSArray *imageArray;
+    
 }
 @property (nonatomic)BOOL isRefreshing;
 @property (nonatomic)BOOL isPullToRefresh;
 @property (nonatomic)BOOL isPageRefreshing;
 @property (nonatomic)BOOL pullRefreshChecker;
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
-
+@property (strong,nonatomic) NSMutableArray *imageArray;
 @end
 
 @implementation DSFirstView
@@ -29,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    _imageArray = [[NSMutableArray alloc]init];
     NSLog(@"first view: %@",_passedResult);
     //****Register CollectionView class and cell******
     self.collectionView.dataSource = self;
@@ -57,8 +57,8 @@
 - (NSInteger)collectionView:(UICollectionView*)collectionView
      numberOfItemsInSection:(NSInteger)section
 {
-    NSLog(@"imageArray count %lu",(unsigned long)imageArray.count);
-    return imageArray.count;
+  
+    return _imageArray.count;
 }
 - (UICollectionViewCell*)collectionView:(UICollectionView*)collectionView
                  cellForItemAtIndexPath:(NSIndexPath*)indexPath
@@ -71,9 +71,9 @@
     DSImageCollectionViewCell *imageViewCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"imageView"
                                                                forIndexPath:indexPath];
     //   _imageViewCell.imageCell.image = [UIImage imageNamed:[productDict objectForKey:@"url"]];
-    [imageViewCell.imageCell sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://media1.giphy.com/media/%@/100.gif",imageArray[indexPath.item]]]
+    [imageViewCell.imageCell sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://media1.giphy.com/media/%@/100.gif",_imageArray[indexPath.item]]]
                                 placeholderImage:[UIImage imageNamed:@""]];
-     NSLog(@"image url: %@",[NSString stringWithFormat:@"https://media1.giphy.com/media/%@/100.gif",imageArray[indexPath.item]]);
+     NSLog(@"image url: %@",[NSString stringWithFormat:@"https://media1.giphy.com/media/%@/100.gif",_imageArray[indexPath.item]]);
     
     return imageViewCell;
 }
@@ -99,16 +99,7 @@
     NSLog(@"sizeForItemAtIndexPath  %f",screenWidth/4);
     return CGSizeMake(screenWidth/4, screenWidth/4);
 }
--(int)getCurrentIndexItem:(int)toAppend{
-    NSIndexPath *indexPath = nil;
-    int currentIndex = 0;
-    for (UICollectionViewCell *cell in [self.collectionView visibleCells]) {
-        indexPath = [self.collectionView indexPathForCell:cell];
-        NSLog(@"%@",indexPath);
-    }
-    currentIndex = (int)indexPath.item + toAppend;
-    return currentIndex;
-}
+
 - (void)getImages:(int)pageId
 {
  
@@ -124,26 +115,55 @@
     [manager.requestSerializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain",@"application/json",nil];
-    NSString * serviceUrl =[NSString stringWithFormat:@"http://api.giphy.com/v1/gifs/search?q=%@&api_key=dc6zaTOxFJmzC&limit=44&page=%@&rating=pg",value,pageNumberString];
-    NSLog(@"getImages url: %@",serviceUrl);
+    NSString * serviceUrl =[NSString stringWithFormat:@"http://api.giphy.com/v1/gifs/search?q=%@&api_key=dc6zaTOxFJmzC&limit=44&offset=%@&rating=pg",value,pageNumberString];
+    NSLog(@"gify getImages url: %@",serviceUrl);
    
     [manager GET:serviceUrl parameters:nil progress:nil success:^(NSURLSessionTask* task, id results) {
        
-        imageArray = nil;
         NSDictionary *json = [NSJSONSerialization JSONObjectWithData:results options:NSJSONReadingMutableLeaves | NSJSONReadingAllowFragments error:nil];
         
+        NSArray * response = [json valueForKeyPath:@"data.id"];
         
-        imageArray = [json valueForKeyPath:@"data.id"];
-        NSLog(@"JSON getImages printed: %@", imageArray);
+        
+        if (pageNumber == 0) {
+            _imageArray =[NSMutableArray arrayWithArray:response];
+        }else{
+           
+        }
+//        _imageArray = [json valueForKeyPath:@"data.id"];
+        NSLog(@"JSON gify getImages printed: %@", _imageArray);
                   [self.collectionView reloadData];
       
-       // [self.collectionView performBatchUpdates:^{
-      //      [self.collectionView reloadSections:[NSIndexSet indexSetWithIndex:0]];
-       // } completion:nil];
+        if (_isRefreshing == YES) {
+            // do all row insertion/delete here
+            
+             [self.collectionView performBatchUpdates:^{
+        
+            NSMutableArray *indexArray = [NSMutableArray array];
+            for (int i = 1; i<= response.count ; i++) {
+                [indexArray addObject:[NSIndexPath indexPathForItem:self->_imageArray.count - i inSection:0]];
+            }
+            
+            
+         
+            [self.collectionView insertItemsAtIndexPaths:indexArray];
+      [_imageArray addObjectsFromArray:response];
+             _isRefreshing = NO;
+             }completion:nil];
+            [_collectionView reloadData];
+            NSLog(@"at refresh tableview feeds section");
+            
+        }else {
+            NSLog(@"at reload tableview feeds section");
+            [self.collectionView reloadData];
+            
+        }
+    
+
     }
          failure:^(NSURLSessionTask* operation, NSError* error) {
              
-                        NSLog(@"Error getImages printed: %@", error);
+                        NSLog(@"Error gifphy getImages printed: %@", error);
          }];
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
