@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03405696BE31EE2DE1D7EB34 /* libPods-DSSearchPhotoPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F27C3CF62A197918E0F5240 /* libPods-DSSearchPhotoPicker.a */; };
+		8E7EDFED1DA53ECF003E5BFF /* DSImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7EDFEB1DA53ECF003E5BFF /* DSImageCollectionViewCell.m */; };
+		8E7EDFEE1DA53ECF003E5BFF /* DSImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E7EDFEC1DA53ECF003E5BFF /* DSImageCollectionViewCell.xib */; };
+		CC594E891DA53AC100823047 /* DSFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E841DA53AC100823047 /* DSFirstView.m */; };
+		CC594E8B1DA53AC100823047 /* DSThirdView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E881DA53AC100823047 /* DSThirdView.m */; };
+		CC594E911DA53ADF00823047 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E8D1DA53ADF00823047 /* AppDelegate.m */; };
+		CC594E921DA53ADF00823047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC594E8E1DA53ADF00823047 /* Assets.xcassets */; };
+		CC594E961DA53AFC00823047 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594E951DA53AFC00823047 /* main.m */; };
+		CC594E9F1DA53B9000823047 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC594E901DA53ADF00823047 /* Info.plist */; };
+		CC594EB61DA53C9600823047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC594EB21DA53C9600823047 /* LaunchScreen.storyboard */; };
+		CC594EB71DA53C9600823047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC594EB41DA53C9600823047 /* Main.storyboard */; };
+		CC594EBA1DA53CAE00823047 /* DSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594EB91DA53CAE00823047 /* DSViewController.m */; };
+		CC594EBF1DA67C8C00823047 /* activityLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594EBD1DA67C8C00823047 /* activityLoader.m */; };
+		CC594EC01DA67C8C00823047 /* activityLoader.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC594EBE1DA67C8C00823047 /* activityLoader.xib */; };
+		CC594EC41DA76FEA00823047 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594EC31DA76FE900823047 /* UIScrollView+EmptyDataSet.m */; };
+		CC594ECE1DA782B900823047 /* DSImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594ECD1DA782B900823047 /* DSImageView.m */; };
+		CC594ED11DA79DD800823047 /* gif_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = CC594ED01DA79DD800823047 /* gif_1.gif */; };
+		CC594ED41DA79E8300823047 /* loadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC594ED31DA79E8300823047 /* loadingView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F27C3CF62A197918E0F5240 /* libPods-DSSearchPhotoPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DSSearchPhotoPicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E7EDFEA1DA53ECF003E5BFF /* DSImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSImageCollectionViewCell.h; sourceTree = SOURCE_ROOT; };
+		8E7EDFEB1DA53ECF003E5BFF /* DSImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSImageCollectionViewCell.m; sourceTree = SOURCE_ROOT; };
+		8E7EDFEC1DA53ECF003E5BFF /* DSImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSImageCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
+		B59989D408D1F0D074B51836 /* Pods-DSSearchPhotoPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSSearchPhotoPicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DSSearchPhotoPicker/Pods-DSSearchPhotoPicker.debug.xcconfig"; sourceTree = "<group>"; };
+		CC594E431DA51ED300823047 /* DSSearchPhotoPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSSearchPhotoPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC594E831DA53AC100823047 /* DSFirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSFirstView.h; path = DSSearchPhotoPicker/DSFirstView.h; sourceTree = SOURCE_ROOT; };
+		CC594E841DA53AC100823047 /* DSFirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSFirstView.m; path = DSSearchPhotoPicker/DSFirstView.m; sourceTree = SOURCE_ROOT; };
+		CC594E871DA53AC100823047 /* DSThirdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSThirdView.h; path = DSSearchPhotoPicker/DSThirdView.h; sourceTree = SOURCE_ROOT; };
+		CC594E881DA53AC100823047 /* DSThirdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSThirdView.m; path = DSSearchPhotoPicker/DSThirdView.m; sourceTree = SOURCE_ROOT; };
+		CC594E8C1DA53ADF00823047 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = DSSearchPhotoPicker/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		CC594E8D1DA53ADF00823047 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = DSSearchPhotoPicker/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		CC594E8E1DA53ADF00823047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = DSSearchPhotoPicker/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		CC594E901DA53ADF00823047 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = DSSearchPhotoPicker/Info.plist; sourceTree = SOURCE_ROOT; };
+		CC594E951DA53AFC00823047 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = DSSearchPhotoPicker/main.m; sourceTree = SOURCE_ROOT; };
+		CC594EB31DA53C9600823047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DSSearchPhotoPicker/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		CC594EB51DA53C9600823047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DSSearchPhotoPicker/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		CC594EB81DA53CAE00823047 /* DSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSViewController.h; path = DSSearchPhotoPicker/DSViewController.h; sourceTree = SOURCE_ROOT; };
+		CC594EB91DA53CAE00823047 /* DSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSViewController.m; path = DSSearchPhotoPicker/DSViewController.m; sourceTree = SOURCE_ROOT; };
+		CC594EBC1DA67C8C00823047 /* activityLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = activityLoader.h; sourceTree = SOURCE_ROOT; };
+		CC594EBD1DA67C8C00823047 /* activityLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = activityLoader.m; sourceTree = SOURCE_ROOT; };
+		CC594EBE1DA67C8C00823047 /* activityLoader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = activityLoader.xib; sourceTree = SOURCE_ROOT; };
+		CC594EC21DA76FE900823047 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = SOURCE_ROOT; };
+		CC594EC31DA76FE900823047 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = SOURCE_ROOT; };
+		CC594ECC1DA782B900823047 /* DSImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSImageView.h; sourceTree = SOURCE_ROOT; };
+		CC594ECD1DA782B900823047 /* DSImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSImageView.m; sourceTree = SOURCE_ROOT; };
+		CC594ED01DA79DD800823047 /* gif_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif_1.gif; sourceTree = SOURCE_ROOT; };
+		CC594ED21DA79E8300823047 /* loadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loadingView.h; sourceTree = SOURCE_ROOT; };
+		CC594ED31DA79E8300823047 /* loadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loadingView.m; sourceTree = SOURCE_ROOT; };
+		D7E0CEAE8B03AA32331059C5 /* Pods-DSSearchPhotoPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSSearchPhotoPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSSearchPhotoPicker/Pods-DSSearchPhotoPicker.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC594E401DA51ED300823047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03405696BE31EE2DE1D7EB34 /* libPods-DSSearchPhotoPicker.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6FEFE8E51FDC7CD7D44E7BEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B59989D408D1F0D074B51836 /* Pods-DSSearchPhotoPicker.debug.xcconfig */,
+				D7E0CEAE8B03AA32331059C5 /* Pods-DSSearchPhotoPicker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E7EDFE51DA53E75003E5BFF /* DSCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				CC594E791DA526F500823047 /* DSCycleView */,
+				8E7EDFE91DA53E8C003E5BFF /* DSCollectionCell */,
+			);
+			name = DSCollectionView;
+			sourceTree = "<group>";
+		};
+		8E7EDFE91DA53E8C003E5BFF /* DSCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				8E7EDFEA1DA53ECF003E5BFF /* DSImageCollectionViewCell.h */,
+				8E7EDFEB1DA53ECF003E5BFF /* DSImageCollectionViewCell.m */,
+				8E7EDFEC1DA53ECF003E5BFF /* DSImageCollectionViewCell.xib */,
+			);
+			name = DSCollectionCell;
+			sourceTree = "<group>";
+		};
+		CC594E3A1DA51ED300823047 = {
+			isa = PBXGroup;
+			children = (
+				CC594E451DA51ED300823047 /* DSSearchPhotoPicker */,
+				CC594E441DA51ED300823047 /* Products */,
+				6FEFE8E51FDC7CD7D44E7BEA /* Pods */,
+				F5A31F5A4015844FC51D1F3E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC594E441DA51ED300823047 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC594E431DA51ED300823047 /* DSSearchPhotoPicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC594E451DA51ED300823047 /* DSSearchPhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				CC594EBB1DA67C6600823047 /* footerView */,
+				8E7EDFE51DA53E75003E5BFF /* DSCollectionView */,
+				CC594ECB1DA7829100823047 /* imageView */,
+				CC594E8C1DA53ADF00823047 /* AppDelegate.h */,
+				CC594E8D1DA53ADF00823047 /* AppDelegate.m */,
+				CC594EB81DA53CAE00823047 /* DSViewController.h */,
+				CC594EB91DA53CAE00823047 /* DSViewController.m */,
+				CC594E8E1DA53ADF00823047 /* Assets.xcassets */,
+				CC594EB21DA53C9600823047 /* LaunchScreen.storyboard */,
+				CC594EB41DA53C9600823047 /* Main.storyboard */,
+				CC594E901DA53ADF00823047 /* Info.plist */,
+				CC594E461DA51ED300823047 /* Supporting Files */,
+			);
+			name = DSSearchPhotoPicker;
+			path = customPhotoPicker;
+			sourceTree = "<group>";
+		};
+		CC594E461DA51ED300823047 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC594EC11DA76FD500823047 /* DZNEmptyState */,
+				CC594E951DA53AFC00823047 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC594E791DA526F500823047 /* DSCycleView */ = {
+			isa = PBXGroup;
+			children = (
+				CC594E831DA53AC100823047 /* DSFirstView.h */,
+				CC594E841DA53AC100823047 /* DSFirstView.m */,
+				CC594E871DA53AC100823047 /* DSThirdView.h */,
+				CC594E881DA53AC100823047 /* DSThirdView.m */,
+			);
+			name = DSCycleView;
+			sourceTree = "<group>";
+		};
+		CC594EBB1DA67C6600823047 /* footerView */ = {
+			isa = PBXGroup;
+			children = (
+				CC594ED21DA79E8300823047 /* loadingView.h */,
+				CC594ED31DA79E8300823047 /* loadingView.m */,
+				CC594ED01DA79DD800823047 /* gif_1.gif */,
+				CC594EBC1DA67C8C00823047 /* activityLoader.h */,
+				CC594EBD1DA67C8C00823047 /* activityLoader.m */,
+				CC594EBE1DA67C8C00823047 /* activityLoader.xib */,
+			);
+			name = footerView;
+			sourceTree = "<group>";
+		};
+		CC594EC11DA76FD500823047 /* DZNEmptyState */ = {
+			isa = PBXGroup;
+			children = (
+				CC594EC21DA76FE900823047 /* UIScrollView+EmptyDataSet.h */,
+				CC594EC31DA76FE900823047 /* UIScrollView+EmptyDataSet.m */,
+			);
+			name = DZNEmptyState;
+			sourceTree = "<group>";
+		};
+		CC594ECB1DA7829100823047 /* imageView */ = {
+			isa = PBXGroup;
+			children = (
+				CC594ECC1DA782B900823047 /* DSImageView.h */,
+				CC594ECD1DA782B900823047 /* DSImageView.m */,
+			);
+			name = imageView;
+			sourceTree = "<group>";
+		};
+		F5A31F5A4015844FC51D1F3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F27C3CF62A197918E0F5240 /* libPods-DSSearchPhotoPicker.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC594E421DA51ED300823047 /* DSSearchPhotoPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC594E701DA51ED400823047 /* Build configuration list for PBXNativeTarget "DSSearchPhotoPicker" */;
+			buildPhases = (
+				94A68E19E546FDC0F3137580 /* [CP] Check Pods Manifest.lock */,
+				CC594E3F1DA51ED300823047 /* Sources */,
+				CC594E401DA51ED300823047 /* Frameworks */,
+				CC594E411DA51ED300823047 /* Resources */,
+				537F2B4F95CCD72CFE275C01 /* [CP] Embed Pods Frameworks */,
+				BCB76139E4C642079F93AFB0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSSearchPhotoPicker;
+			productName = customPhotoPicker;
+			productReference = CC594E431DA51ED300823047 /* DSSearchPhotoPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC594E3B1DA51ED300823047 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Ruthwick S Rai";
+				TargetAttributes = {
+					CC594E421DA51ED300823047 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5C79GLKU9M;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CC594E3E1DA51ED300823047 /* Build configuration list for PBXProject "DSSearchPhotoPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC594E3A1DA51ED300823047;
+			productRefGroup = CC594E441DA51ED300823047 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC594E421DA51ED300823047 /* DSSearchPhotoPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC594E411DA51ED300823047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC594EB61DA53C9600823047 /* LaunchScreen.storyboard in Resources */,
+				CC594E9F1DA53B9000823047 /* Info.plist in Resources */,
+				CC594E921DA53ADF00823047 /* Assets.xcassets in Resources */,
+				CC594ED11DA79DD800823047 /* gif_1.gif in Resources */,
+				8E7EDFEE1DA53ECF003E5BFF /* DSImageCollectionViewCell.xib in Resources */,
+				CC594EB71DA53C9600823047 /* Main.storyboard in Resources */,
+				CC594EC01DA67C8C00823047 /* activityLoader.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		537F2B4F95CCD72CFE275C01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DSSearchPhotoPicker/Pods-DSSearchPhotoPicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94A68E19E546FDC0F3137580 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BCB76139E4C642079F93AFB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DSSearchPhotoPicker/Pods-DSSearchPhotoPicker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC594E3F1DA51ED300823047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC594EBA1DA53CAE00823047 /* DSViewController.m in Sources */,
+				CC594E961DA53AFC00823047 /* main.m in Sources */,
+				CC594E891DA53AC100823047 /* DSFirstView.m in Sources */,
+				CC594ED41DA79E8300823047 /* loadingView.m in Sources */,
+				CC594ECE1DA782B900823047 /* DSImageView.m in Sources */,
+				CC594EC41DA76FEA00823047 /* UIScrollView+EmptyDataSet.m in Sources */,
+				CC594E8B1DA53AC100823047 /* DSThirdView.m in Sources */,
+				CC594E911DA53ADF00823047 /* AppDelegate.m in Sources */,
+				CC594EBF1DA67C8C00823047 /* activityLoader.m in Sources */,
+				8E7EDFED1DA53ECF003E5BFF /* DSImageCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CC594EB21DA53C9600823047 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC594EB31DA53C9600823047 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CC594EB41DA53C9600823047 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC594EB51DA53C9600823047 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC594E6E1DA51ED400823047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC594E6F1DA51ED400823047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC594E711DA51ED400823047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B59989D408D1F0D074B51836 /* Pods-DSSearchPhotoPicker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5C79GLKU9M;
+				INFOPLIST_FILE = DSSearchPhotoPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = designString.DSSearchPhotoPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CC594E721DA51ED400823047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7E0CEAE8B03AA32331059C5 /* Pods-DSSearchPhotoPicker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5C79GLKU9M;
+				INFOPLIST_FILE = DSSearchPhotoPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = designString.DSSearchPhotoPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC594E3E1DA51ED300823047 /* Build configuration list for PBXProject "DSSearchPhotoPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC594E6E1DA51ED400823047 /* Debug */,
+				CC594E6F1DA51ED400823047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC594E701DA51ED400823047 /* Build configuration list for PBXNativeTarget "DSSearchPhotoPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC594E711DA51ED400823047 /* Debug */,
+				CC594E721DA51ED400823047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC594E3B1DA51ED300823047 /* Project object */;
+}
